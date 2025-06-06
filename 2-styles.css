@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.toggle{
+    width: max-content;
+    position: relative;
+}
+.toggle-cb{
+   opacity: 0;
+   pointer-events: none;
+   position: absolute;
+}
+.toggle-cb:checked + label .toggle-inner{
+    background-color: red ;
+}
+.toggle-cb:checked + label .toggle-inner::before{
+   content: "NO";
+}
+.toggle-cb:checked + label .toggle-switch{
+    right: 0;
+    
+}
+.toggle-inner{
+    width: 140px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50px;
+
+}
+.toggle-inner::before{
+    content: "YES";
+    display: flex;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    color: white;
+}
+.toggle-switch{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+   
+}

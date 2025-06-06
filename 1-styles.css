@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    position: relative;
+    color:#A91B3C;
+
+}
+a:active{
+    color:#A91B3C ;
+}
+a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #A91B3C;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 500ms;
+
+}
+a:hover::after{
+    width:100%;
+}
