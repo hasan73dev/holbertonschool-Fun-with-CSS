@@ -30,12 +30,7 @@
     border-radius: 2px;
     transition: all 500ms;
 }
-.menu-line-1{
-   
-}
-.menu-line-3{
 
-}
 .menu-line-2{
     margin: 5px 0;
     
@@ -69,4 +64,13 @@
    transform: translateY(0);
    opacity: 1;
    pointer-events: auto;
+}
+.menu-open:checked + .menu-open-button .menu-line-1{
+        transform: rotate(45deg)  translate(2px);
+}
+.menu-open:checked + .menu-open-button .menu-line-2{
+      display: none;
+}
+.menu-open:checked + .menu-open-button .menu-line-3{
+        transform: rotate(-45deg)  translate(2px);
 }
