@@ -20,6 +20,7 @@
     height: var(--width-and-height);
     background-color: red;
     border-radius: 50px;
+    border:1px solid gray;
 }
 .menu-line{
     display: block;
@@ -27,6 +28,7 @@
     height: 5px;
     background-color: white;
     border-radius: 2px;
+    transition: all 500ms;
 }
 .menu-line-1{
    
@@ -52,6 +54,11 @@
    transition: all 500ms;
    opacity: 0;
    pointer-events: none;
+   border: 1px solid gray;
+}
+.menu-item:hover{
+    background-color: white;
+    color: red;
 }
 .menu-open{
     opacity: 0;
